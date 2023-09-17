@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height:100vh;
+    width: 100%;
+    background-color: rgb(223, 155, 53);
+}
+.head{ 
+    height:10rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}  
+.head input,.head button{
+  padding:0.5rem;
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+}
+::-webkit-input-placeholder { 
+    text-align: center;
+  }
+  
+
+  ::placeholder {
+    text-align: center;
+  }
+.head button{
+     color:orange;
+     cursor:pointer;
+     background:white;
+     transition: all 0.3s ease;
+}
+.head button:hover{
+    background:orange;
+    color:white;
+}
+#itemContainer{
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#items{
+    min-width: 30%;
+    list-style: none;
+}
+.todos{
+    margin:0.5rem;
+    background-color: white;
+    font-size: 1.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s ease;
+}
+.todos li{
+    margin:0.2rem;
+    flex:1;
+    font-family: 'Nunito', sans-serif;
+}
+.checked,.deleted{
+    background-color:white;
+    font-size:1.5rem ;
+    padding:0.3rem;
+    border:none;
+    cursor:pointer;
+    transition: all 0.3s ease ;
+}
+.checked{
+    color:green;
+    transition:all 0.3s ease;
+}
+.deleted{
+    color:red;
+    transition:all 0.3s ease;    
+}
+.checked:hover{
+    color:white;
+    background:green;
+}
+.deleted:hover{
+    color:white;
+    background:red;
+}
+.fa-check,
+.fa-trash{
+    pointer-events: none;
+}
+.complete{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity:0
+}
+
+
+
